@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { type NavItem, type SharedData } from '@/types'
 import { Link, usePage } from '@inertiajs/vue3'
 import { SidebarGroup, SidebarGroupLabel, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@sethsharp/lumuix'
-import { type NavItem, type SharedData } from '@/types'
 
 defineProps<{
     items: NavItem[]

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import type { User } from '@/types'
 import { useInitials } from '@/composables/useInitials'
+import type { User } from '@/types'
+import { Avatar, AvatarFallback, AvatarImage } from '@sethsharp/lumuix'
+import { computed } from 'vue'
 
 interface Props {
     user: User

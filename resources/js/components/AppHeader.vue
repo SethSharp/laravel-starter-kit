@@ -1,25 +1,36 @@
 <script setup lang="ts">
-import AppLogo from '@/components/AppLogo.vue'
-import AppLogoIcon from '@/components/AppLogoIcon.vue'
-import Breadcrumbs from '@/components/Breadcrumbs.vue'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import { computed } from 'vue'
+import { Link, usePage } from '@inertiajs/vue3'
+import type { BreadcrumbItem, NavItem } from '@/types'
+import { BookOpen, Folder, LayoutGrid, Menu, Search } from 'lucide-vue-next'
 import {
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
+    Button,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuTrigger,
     NavigationMenu,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
     navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu'
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import UserMenuContent from '@/components/UserMenuContent.vue'
+    Sheet,
+    SheetContent,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@sethsharp/lumuix'
+import AppLogo from '@/components/AppLogo.vue'
+import AppLogoIcon from '@/components/AppLogoIcon.vue'
+import Breadcrumbs from '@/components/Breadcrumbs.vue'
 import { getInitials } from '@/composables/useInitials'
-import type { BreadcrumbItem, NavItem } from '@/types'
-import { Link, usePage } from '@inertiajs/vue3'
-import { BookOpen, Folder, LayoutGrid, Menu, Search } from 'lucide-vue-next'
-import { computed } from 'vue'
+import UserMenuContent from '@/components/UserMenuContent.vue'
 
 interface Props {
     breadcrumbs?: BreadcrumbItem[]

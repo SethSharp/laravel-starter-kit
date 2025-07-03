@@ -1,15 +1,11 @@
 <script setup lang="ts">
-import InputError from '@/components/InputError.vue'
+import HeadingSmall from '@/components/HeadingSmall.vue'
 import AppLayout from '@/layouts/AppLayout.vue'
 import SettingsLayout from '@/layouts/settings/Layout.vue'
-import { Head, useForm } from '@inertiajs/vue3'
-import { ref } from 'vue'
-
-import HeadingSmall from '@/components/HeadingSmall.vue'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 import { type BreadcrumbItem } from '@/types'
+import { Head, useForm } from '@inertiajs/vue3'
+import { Button, Error, Input, Label } from '@sethsharp/lumuix'
+import { ref } from 'vue'
 
 const breadcrumbItems: BreadcrumbItem[] = [
     {
@@ -70,7 +66,7 @@ const updatePassword = () => {
                             autocomplete="current-password"
                             placeholder="Current password"
                         />
-                        <InputError :message="form.errors.current_password" />
+                        <Error :error="form.errors.current_password" />
                     </div>
 
                     <div class="grid gap-2">
@@ -84,7 +80,7 @@ const updatePassword = () => {
                             autocomplete="new-password"
                             placeholder="New password"
                         />
-                        <InputError :message="form.errors.password" />
+                        <Error :error="form.errors.password" />
                     </div>
 
                     <div class="grid gap-2">
@@ -97,7 +93,7 @@ const updatePassword = () => {
                             autocomplete="new-password"
                             placeholder="Confirm password"
                         />
-                        <InputError :message="form.errors.password_confirmation" />
+                        <Error :error="form.errors.password_confirmation" />
                     </div>
 
                     <div class="flex items-center gap-4">

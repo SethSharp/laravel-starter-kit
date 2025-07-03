@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import InputError from '@/components/InputError.vue'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 import AuthLayout from '@/layouts/AuthLayout.vue'
 import { Head, useForm } from '@inertiajs/vue3'
+import { Button, Error, Input, Label } from '@sethsharp/lumuix'
 import { LoaderCircle } from 'lucide-vue-next'
 
 interface Props {
@@ -39,7 +36,7 @@ const submit = () => {
                 <div class="grid gap-2">
                     <Label for="email">Email</Label>
                     <Input id="email" type="email" name="email" autocomplete="email" v-model="form.email" class="mt-1 block w-full" readonly />
-                    <InputError :message="form.errors.email" class="mt-2" />
+                    <Error :error="form.errors.email" class="mt-2" />
                 </div>
 
                 <div class="grid gap-2">
@@ -54,7 +51,7 @@ const submit = () => {
                         autofocus
                         placeholder="Password"
                     />
-                    <InputError :message="form.errors.password" />
+                    <Error :error="form.errors.password" />
                 </div>
 
                 <div class="grid gap-2">
@@ -68,7 +65,7 @@ const submit = () => {
                         class="mt-1 block w-full"
                         placeholder="Confirm password"
                     />
-                    <InputError :message="form.errors.password_confirmation" />
+                    <Error :error="form.errors.password_confirmation" />
                 </div>
 
                 <Button type="submit" class="mt-4 w-full" :disabled="form.processing">

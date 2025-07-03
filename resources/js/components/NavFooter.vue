@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@sethsharp/lumuix'
 import { type NavItem } from '@/types'
+import { SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@sethsharp/lumuix'
 
 interface Props {
     items: NavItem[]

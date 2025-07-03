@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import InputError from '@/components/InputError.vue'
 import TextLink from '@/components/TextLink.vue'
-import { Button } from '@/components/ui/button'
-import { Checkbox } from '@/components/ui/checkbox'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 import AuthBase from '@/layouts/AuthLayout.vue'
 import { Head, useForm } from '@inertiajs/vue3'
+import { Button, Checkbox, Error, Input, Label } from '@sethsharp/lumuix'
 import { LoaderCircle } from 'lucide-vue-next'
 
 defineProps<{
@@ -49,7 +45,7 @@ const submit = () => {
                         v-model="form.email"
                         placeholder="email@example.com"
                     />
-                    <InputError :message="form.errors.email" />
+                    <Error :error="form.errors.email" />
                 </div>
 
                 <div class="grid gap-2">
@@ -68,7 +64,7 @@ const submit = () => {
                         v-model="form.password"
                         placeholder="Password"
                     />
-                    <InputError :message="form.errors.password" />
+                    <Error :error="form.errors.password" />
                 </div>
 
                 <div class="flex items-center justify-between">
