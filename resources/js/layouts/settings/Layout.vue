@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Heading from '@/components/Heading.vue'
+import Heading from '@/components/heading/Heading.vue'
 import { type NavItem } from '@/types'
 import { Link, usePage } from '@inertiajs/vue3'
 import { Button, Separator } from '@sethsharp/lumuix'

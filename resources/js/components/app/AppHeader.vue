@@ -26,9 +26,9 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@sethsharp/lumuix'
-import AppLogo from '@/components/AppLogo.vue'
-import AppLogoIcon from '@/components/AppLogoIcon.vue'
-import Breadcrumbs from '@/components/Breadcrumbs.vue'
+import AppLogo from '@/components/app/AppLogo.vue'
+import AppLogoIcon from '@/components/app/AppLogoIcon.vue'
+import Breadcrumbs from '@/components/navigation/Breadcrumbs.vue'
 import { getInitials } from '@/composables/useInitials'
 import UserMenuContent from '@/components/UserMenuContent.vue'
 

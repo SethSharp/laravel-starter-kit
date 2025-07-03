@@ -12,7 +12,7 @@ import {
     useSidebar,
 } from '@sethsharp/lumuix'
 import { ChevronsUpDown } from 'lucide-vue-next'
-import UserMenuContent from './UserMenuContent.vue'
+import UserMenuContent from '../UserMenuContent.vue'
 
 const page = usePage<SharedData>()
 const user = page.props.auth.user as User

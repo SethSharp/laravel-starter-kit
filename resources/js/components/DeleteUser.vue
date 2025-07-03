@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HeadingSmall from '@/components/HeadingSmall.vue'
+import HeadingSmall from '@/components/heading/HeadingSmall.vue'
 import { useForm } from '@inertiajs/vue3'
 import {
     Button,

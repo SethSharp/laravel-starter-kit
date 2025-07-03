@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import NavFooter from '@/components/NavFooter.vue'
-import NavMain from '@/components/NavMain.vue'
-import NavUser from '@/components/NavUser.vue'
+import NavFooter from '@/components/navigation/NavFooter.vue'
+import NavMain from '@/components/navigation/NavMain.vue'
+import NavUser from '@/components/navigation/NavUser.vue'
 import { type NavItem } from '@/types'
 import { Link } from '@inertiajs/vue3'
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@sethsharp/lumuix'
