@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import UserInfo from '@/components/UserInfo.vue'
-import { DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from '@/components/ui/dropdown-menu'
 import type { User } from '@/types'
 import { Link, router } from '@inertiajs/vue3'
+import { DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from '@sethsharp/lumuix'
 import { LogOut, Settings } from 'lucide-vue-next'
 
 interface Props {

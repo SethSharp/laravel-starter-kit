@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import InputError from '@/components/InputError.vue'
 import TextLink from '@/components/TextLink.vue'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 import AuthLayout from '@/layouts/AuthLayout.vue'
 import { Head, useForm } from '@inertiajs/vue3'
+import { Button, Error, Input, Label } from '@sethsharp/lumuix'
 import { LoaderCircle } from 'lucide-vue-next'
 
 defineProps<{
@@ -34,7 +31,7 @@ const submit = () => {
                 <div class="grid gap-2">
                     <Label for="email">Email address</Label>
                     <Input id="email" type="email" name="email" autocomplete="off" v-model="form.email" autofocus placeholder="email@example.com" />
-                    <InputError :message="form.errors.email" />
+                    <Error :error="form.errors.email" />
                 </div>
 
                 <div class="my-6 flex items-center justify-start">
