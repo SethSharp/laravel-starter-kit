@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\Middleware;
+namespace Support\Middleware;
 
 use Inertia\Middleware;
 use Tighten\Ziggy\Ziggy;

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\App\Controllers\Auth;
+namespace App\Controllers\Auth;
 
 use Inertia\Inertia;
 use Inertia\Response;
+use Support\Controller;
 use Illuminate\Http\Request;
-use App\App\Controllers\Controller;
+use App\Requests\Auth\LoginRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;
-use App\App\Requests\Auth\LoginRequest;
 
 class AuthenticatedSessionController extends Controller
 {

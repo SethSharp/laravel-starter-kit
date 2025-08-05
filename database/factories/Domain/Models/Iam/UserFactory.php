@@ -2,8 +2,8 @@
 
 namespace Database\Factories\Domain\Models\Iam;
 
+use Domain\Models\Iam\User;
 use Illuminate\Support\Str;
-use App\Domain\Models\Iam\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

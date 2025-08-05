@@ -8,6 +8,13 @@
         "starter-kit"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Seth Sharp",
+            "homepage": "https://sethsharp.dev",
+            "role": "Maintainer, Developer"
+        }
+    ],
     "require": {
         "php": "^8.3",
         "codinglabsau/php-styles": "dev-main",
@@ -33,7 +40,7 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/App/helpers.php"
+            "app/Support/helpers.php"
         ]
     },
     "autoload-dev": {

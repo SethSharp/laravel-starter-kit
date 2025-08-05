@@ -1,11 +1,11 @@
 <?php
 
-namespace App\App\Controllers\Auth;
+namespace App\Controllers\Auth;
 
 use Inertia\Inertia;
 use Inertia\Response;
+use Support\Controller;
 use Illuminate\Http\Request;
-use App\App\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Validation\ValidationException;

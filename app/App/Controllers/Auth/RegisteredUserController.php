@@ -1,13 +1,13 @@
 <?php
 
-namespace App\App\Controllers\Auth;
+namespace App\Controllers\Auth;
 
 use Inertia\Inertia;
 use Inertia\Response;
+use Support\Controller;
 use Illuminate\Http\Request;
 use App\Domain\Models\Iam\User;
 use Illuminate\Validation\Rules;
-use App\App\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;

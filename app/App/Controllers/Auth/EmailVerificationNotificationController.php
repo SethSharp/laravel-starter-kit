@@ -1,9 +1,9 @@
 <?php
 
-namespace App\App\Controllers\Auth;
+namespace App\Controllers\Auth;
 
+use Support\Controller;
 use Illuminate\Http\Request;
-use App\App\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 
 class EmailVerificationNotificationController extends Controller

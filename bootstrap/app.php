@@ -1,8 +1,8 @@
 <?php
 
 use App\App;
-use App\Support\Middleware\HandleAppearance;
-use App\Support\Middleware\HandleInertiaRequests;
+use Support\Middleware\HandleAppearance;
+use Support\Middleware\HandleInertiaRequests;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets;

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\App\Controllers\Settings;
+namespace App\Controllers\Settings;
 
 use Inertia\Inertia;
 use Inertia\Response;
+use Support\Controller;
 use Illuminate\Http\Request;
-use App\App\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\App\Requests\Settings\ProfileUpdateRequest;
+use App\Requests\Settings\ProfileUpdateRequest;
 
 class ProfileController extends Controller
 {

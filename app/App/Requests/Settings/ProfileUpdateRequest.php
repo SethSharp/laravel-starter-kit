@@ -1,6 +1,6 @@
 <?php
 
-namespace App\App\Requests\Settings;
+namespace App\Requests\Settings;
 
 use App\Domain\Models\Iam\User;
 use Illuminate\Validation\Rule;
