@@ -2,9 +2,9 @@
 
 namespace App\App\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\App\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 
 class EmailVerificationNotificationController extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-use App\App\Controllers\Settings\PasswordController;
-use App\App\Controllers\Settings\ProfileController;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use App\App\Controllers\Settings\ProfileController;
+use App\App\Controllers\Settings\PasswordController;
 
 Route::middleware('auth')->group(function () {
     Route::redirect('settings', '/settings/profile');

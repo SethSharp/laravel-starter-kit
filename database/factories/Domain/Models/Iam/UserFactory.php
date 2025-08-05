@@ -2,15 +2,16 @@
 
 namespace Database\Factories\Domain\Models\Iam;
 
-use App\Domain\Models\Iam\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use App\Domain\Models\Iam\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UserFactory extends Factory
 {
     protected $model = User::class;
     protected static ?string $password;
+
     public function definition(): array
     {
         return [

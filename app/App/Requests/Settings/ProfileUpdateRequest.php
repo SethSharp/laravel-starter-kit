@@ -3,8 +3,8 @@
 namespace App\App\Requests\Settings;
 
 use App\Domain\Models\Iam\User;
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Illuminate\Foundation\Http\FormRequest;
 
 class ProfileUpdateRequest extends FormRequest
 {

@@ -2,14 +2,14 @@
 
 namespace App\App\Controllers\Settings;
 
-use App\App\Controllers\Controller;
-use App\App\Requests\Settings\ProfileUpdateRequest;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 use Inertia\Response;
+use Illuminate\Http\Request;
+use App\App\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\App\Requests\Settings\ProfileUpdateRequest;
 
 class ProfileController extends Controller
 {
