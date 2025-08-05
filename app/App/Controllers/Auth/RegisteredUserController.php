@@ -5,7 +5,7 @@ namespace App\Controllers\Auth;
 use Inertia\Inertia;
 use Inertia\Response;
 use Support\Controller;
-use Domain\Models\Iam\User;
+use Domain\Iam\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
 use Illuminate\Support\Facades\Auth;
