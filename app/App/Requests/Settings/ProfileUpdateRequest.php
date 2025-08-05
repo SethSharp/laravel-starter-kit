@@ -2,7 +2,7 @@
 
 namespace App\Requests\Settings;
 
-use App\Domain\Models\Iam\User;
+use Domain\Models\Iam\User;
 use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 

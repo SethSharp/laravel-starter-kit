@@ -6,7 +6,7 @@ use Inertia\Inertia;
 use Inertia\Response;
 use Support\Controller;
 use Illuminate\Http\Request;
-use App\Domain\Models\Iam\User;
+use Domain\Models\Iam\User;
 use Illuminate\Validation\Rules;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;

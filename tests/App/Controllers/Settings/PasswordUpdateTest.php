@@ -1,9 +1,10 @@
 <?php
 
-use App\Domain\Models\Iam\User;
+use Domain\Models\Iam\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 test('password can be updated', function () {
     $user = User::factory()->create();
